@@ -9,13 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "i18next": "^25.2.1",
+    "i18next-http-backend": "^3.0.2",
+    "modern-css-reset": "^1.4.0",
+    "next": "15.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.3"
+    "react-i18next": "^15.5.2",
+    "react-multi-carousel": "^2.8.6"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.3.3",
-    "@eslint/eslintrc": "^3"
+    "eslint-config-next": "15.3.3"
   }
 }

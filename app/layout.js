@@ -1,14 +1,39 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
+import "modern-css-reset";
 import "./globals.css";
+import "./media.css";
+import Providers from "./providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const heebo = localFont({
+  src: [
+    {
+      path: "./fonts/Heebo-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Heebo-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Heebo-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-heebo",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const ptSerif = localFont({
+  src: [
+    {
+      path: "./fonts/PTSerif-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-pt-serif",
 });
 
 export const metadata = {
@@ -18,9 +43,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+    <html lang="he">
+      <body className={`${heebo.variable} ${ptSerif.variable}`}>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
