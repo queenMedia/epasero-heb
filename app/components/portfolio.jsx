@@ -9,12 +9,9 @@ const portfolioData = [
     tagIconWidth: 11,
     tagIconHeight: 11,
     gallery: {
-      top: [
-        "assets/portfolio/damac/top.png",
-        "assets/portfolio/damac/top2.png",
-      ],
-      bottom: ["assets/portfolio/damac/bottom.png"],
-      left: ["assets/portfolio/damac/left.png"],
+      top: ["assets/portfolio/chelsea/top.png"],
+      bottom: ["assets/portfolio/chelsea/bottom.png"],
+      left: ["assets/portfolio/chelsea/left.png"],
     },
     badges: [
       { text: "Apartment" },
@@ -38,12 +35,9 @@ const portfolioData = [
     tagIconWidth: 12,
     tagIconHeight: 15,
     gallery: {
-      top: [
-        "assets/portfolio/damac/top.png",
-        "assets/portfolio/damac/top2.png",
-      ],
-      bottom: ["assets/portfolio/damac/bottom.png"],
-      left: ["assets/portfolio/damac/left.png"],
+      top: ["assets/portfolio/samana/top.png"],
+      bottom: ["assets/portfolio/samana/bottom.png"],
+      left: ["assets/portfolio/samana/left.png"],
     },
     badges: [
       { text: "Apartment" },
@@ -68,11 +62,11 @@ const portfolioData = [
     tagIconHeight: 11,
     gallery: {
       top: [
-        "assets/portfolio/damac/top.png",
-        "assets/portfolio/damac/top2.png",
+        "assets/portfolio/oasis/top.png",
+        // "assets/portfolio/oasis/top2.png",
       ],
-      bottom: ["assets/portfolio/damac/bottom.png"],
-      left: ["assets/portfolio/damac/left.png"],
+      bottom: ["assets/portfolio/oasis/bottom.png"],
+      left: ["assets/portfolio/oasis/left.png"],
     },
     badges: [
       { text: "Apartment" },

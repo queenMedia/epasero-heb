@@ -393,6 +393,33 @@ section .container > p {
 
 .card-tag {
   position: absolute;
+  z-index: 12;
+  top: 16px;
+  right: 16px;
+  color: white;
+  border-radius: 36px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 16px;
+
+  padding: 5px 10px;
+}
+
+.card-tag img {
+  margin-left: 4px;
+}
+
+.card-tag--blue {
+  background: rgba(1, 59, 148, 1);
+}
+
+.card-tag--green {
+  background: rgba(0, 130, 52, 1);
+}
+
+.card-tag--red {
+  background: rgba(208, 90, 35, 1);
 }
 
 .portfolio-card {
