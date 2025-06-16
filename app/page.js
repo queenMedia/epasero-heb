@@ -41,9 +41,11 @@ export default function Page() {
             </div>
           </div>
         </div>
+
         <div className="hero-composition">
           <div className="hero-content">
             <h1>הדרך הבטוחה להשקעות נדל"ן בדובאי</h1>
+            {/* <h1 className="desk-mob">הדרך הבטוחה להשקעות נדל"ן בדובאי</h1> */}
             <p>
               השקעת נדל״ן בדובאי עם תשואה של 15%–12% וללא עמלות – זה לא רק חכם,
               זה נכון
@@ -66,7 +68,7 @@ export default function Page() {
               אנחנו מציעים שירות מקצועי ומותאם אישית לכל לקוח, עם ניסיון רב בשוק
               הנדל"ן בדובאי
             </p>
-            <div className="button-container">
+            <div className="button-container desk-only">
               <button>לתיאום פגישת ייעוץ ללא עלות</button>
             </div>
             <About />
@@ -99,7 +101,7 @@ export default function Page() {
           </div>
         </section>
 
-        <section className="investors">
+        <section className="investors accent">
           <div className="container">
             <div className="rating-wrapper">
               <div className="rating">
@@ -111,9 +113,9 @@ export default function Page() {
                 />
                 <div className="rating-info">
                   <strong>Google Rating</strong>
-                  <div className="rating-accent">
-                    <strong>4.8</strong>
+                  <div className="rating-accent flex-row">
                     <RatingStars />
+                    <strong>4.8</strong>
                   </div>
                   <span>See all our reviews</span>
                 </div>
@@ -123,6 +125,17 @@ export default function Page() {
             <Investors />
           </div>
           <div className="investors-view">
+            <video
+              className="video-background"
+              loop
+              muted
+              playsInline
+              autoPlay
+              // poster="assets/video-1-preview.png"
+            >
+              <source src="assets/skyline-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
             <div className="investors-view-composition">
               <h2>יותר ויותר ישראלים כבר גילו את הפוטנציאל בדובאי</h2>
               <p>
@@ -134,13 +147,13 @@ export default function Page() {
           </div>
         </section>
 
-        <section className="contact">
+        <section className="contact accent">
           <div className="container">
             <div className="logo-wrapper">
               <Image
                 width={58}
                 height={58}
-                src="assets/icons/brid.svg"
+                src="assets/icons/bird.svg"
                 alt="logo"
               />
             </div>
@@ -152,43 +165,21 @@ export default function Page() {
       </main>
       <footer className="footer">
         <div className="container">
-          <div className="footer__top">
-            <div className="footer-statement">
-              <Image
-                width={250}
-                height={96}
-                src="assets/footer-logo.png"
-                alt="footer-logo"
-              />
-              <ul className="footer-navigation">
-                <li>צור קשר</li>
-                <li>פרויקטים</li>
-                <li>אודות</li>
-                <li>דף הבית</li>
-              </ul>
-              <ul className="footer-flags">
-                <li>
-                  <Image
-                    width={49}
-                    height={49}
-                    src="assets/icons/uae.svg"
-                    alt="UAE Flag"
-                  />
-                  <span>United Arab Emirates</span>
-                </li>
-                <li>
-                  <Image
-                    width={49}
-                    height={49}
-                    src="assets/icons/isr.svg"
-                    alt="ISR Flag"
-                  />
-                  <span>United Arab Emirates</span>
-                </li>
-              </ul>
-              <p>השירות הישראלי המוביל להשקעות נדל״ן בדובאי ללא עמלות</p>
-            </div>
-            <div className="footer-contacts">
+          <div className="footer__top flex-row">
+            <div className="footer-contacts flex-row">
+              <div className="footer-contacts__item">
+                <h3>פרטי התקשרות</h3>
+                <ul>
+                  <li>טלפון דובאי: 971 54 233 6409</li>
+                  <li>דוא"ל: info@epasero.com</li>
+                </ul>
+                <p>נשמח לעמוד לשירותכם בכל שאלה או הבהרה.</p>
+              </div>
+              <div className="footer-contacts__item">
+                <h3>שעות פעילות</h3>
+                <p>ימים א'-ה': 18:00 - 09:00</p>
+                <p>יום ו': 17:00- 09:00</p>
+              </div>
               <div className="footer-contacts__item">
                 <h3>הסניפים שלנו</h3>
                 <div className="address">
@@ -201,25 +192,46 @@ export default function Page() {
                   <p>Business Bay, Dubai</p>
                 </div>
               </div>
-              <div className="footer-contacts__item">
-                <h3>שעות פעילות</h3>
-                <p>ימים א'-ה': 18:00 - 09:00</p>
-                <p>יום ו': 17:00- 09:00</p>
-              </div>
-
-              <div className="footer-contacts__item">
-                <h3>פרטי התקשרות</h3>
-                <ul>
-                  <li>טלפון דובאי: 971 54 233 6409</li>
-                  <li>דוא"ל: info@epasero.com</li>
-                </ul>
-                <p>נשמח לעמוד לשירותכם בכל שאלה או הבהרה.</p>
-              </div>
+            </div>
+            <div className="footer-statement">
+              <Image
+                width={250}
+                height={96}
+                src="assets/footer-logo.png"
+                alt="footer-logo"
+              />
+              <ul className="footer-navigation flex-row">
+                <li>צור קשר</li>
+                <li>פרויקטים</li>
+                <li>אודות</li>
+                <li>דף הבית</li>
+              </ul>
+              <ul className="footer-flags flex-row">
+                <li>
+                  <span>State of Israel</span>
+                  <Image
+                    width={24}
+                    height={18}
+                    src="assets/icons/isr.svg"
+                    alt="ISR Flag"
+                  />
+                </li>
+                <li>
+                  <span>United Arab Emirates</span>
+                  <Image
+                    width={24}
+                    height={18}
+                    src="assets/icons/uae.svg"
+                    alt="UAE Flag"
+                  />
+                </li>
+              </ul>
+              <p>השירות הישראלי המוביל להשקעות נדל״ן בדובאי ללא עמלות</p>
             </div>
           </div>
           <div className="footer__links">
             <p>{"<"} עקבו אחרינו</p>
-            <ul>
+            <ul className="flex-row">
               <li>
                 <a href="">
                   <Image
@@ -255,8 +267,8 @@ export default function Page() {
                   <Image
                     width={49}
                     height={49}
-                    src="assets/icons/twitter.svg"
-                    alt="twitter"
+                    src="assets/icons/whatsapp.svg"
+                    alt="whatsapp"
                   />
                 </a>
               </li>

@@ -36,26 +36,26 @@ const Investors = ({ investors = investorsData }) => {
         {investors.map((investor, index) => (
           <li key={index}>
             <div className="investor-card">
-              <div className="investor-card__face">
-                <div className="investor-card-rating">
-                  <RatingStars />
-                  <Image
-                    width={24}
-                    height={24}
-                    src={investor.ratingIcon}
-                    alt="rating icon"
-                  />
-                </div>
-                <div className="investor-card-person">
-                  <div className="investor-card-person__name">
-                    <strong>{investor.name}</strong>
-                    <span>{investor.location}</span>
-                  </div>
+              <div className="investor-card__face flex-row">
+                <div className="investor-card-person flex-row">
                   <Image
                     width={56}
                     height={56}
                     src={investor.image}
                     alt="investor"
+                  />
+                  <div className="investor-card-person__name">
+                    <strong>{investor.name}</strong>
+                    <span>{investor.location}</span>
+                  </div>
+                </div>
+                <div className="investor-card-rating">
+                  <RatingStars />
+                  <Image
+                    width={20}
+                    height={20}
+                    src={investor.ratingIcon}
+                    alt="rating icon"
                   />
                 </div>
               </div>

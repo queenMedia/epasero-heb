@@ -9,7 +9,6 @@ export const PortfolioGallery = ({
   gallery = { top: [], left: [], bottom: [] },
   offset = 0,
 }) => {
-  console.log(offset);
   const [currents, setCurrents] = useState({
     top: 0,
     left: 0,

@@ -49,7 +49,7 @@ const Metrics = ({ items = metricsData }) => {
                 }
               }, interval);
             });
-            io.unobserve(list.current);
+            io?.unobserve(list.current);
           }
         },
         { root: null, rootMargin: "0px", threshold: 1.0 }
@@ -58,7 +58,7 @@ const Metrics = ({ items = metricsData }) => {
       io.observe(list.current);
 
       return () => {
-        io.unobserve(list.current);
+        io?.unobserve(list.current);
       };
     }
   }, [items]);
