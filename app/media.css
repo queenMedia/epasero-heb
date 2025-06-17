@@ -318,6 +318,7 @@
     margin-top: 65px;
   }
 
+  .portfolio-content > ul li,
   .portfolio-card {
     width: 100%;
   }

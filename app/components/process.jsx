@@ -37,7 +37,6 @@ const processData = [
 ];
 
 const Process = ({ steps = processData }) => {
-  console.log("Process steps:", steps);
   return (
     <div className="process-content">
       <ul>
