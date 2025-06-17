@@ -5,19 +5,19 @@ import { RatingStars } from "./rating-stars";
 const investorsData = [
   {
     ratingIcon: "assets/icons/google.svg",
-    name: "דוד מזרחי",
-    location: "ירושלים",
-    image: "assets/investors/1.png",
+    name: "יוסי כהן",
+    location: "תל אביב",
+    image: "assets/investors/3.png",
     review:
-      "מדהים שאפשר לעשות הכול מהארץ. לא הייתי צריך לטוס אפילו פעם אחת. הליווי היה צמוד, גם בעברית, הם מקצועיים מאוד, אמליץ עליהם לחברים שרוצים להשקיע בדובאי.",
+      " חבר המליץ לי עליהם, וכבר מהשיחה הראשונה הרגשתי שאני בידיים טובות. הכול היה ברור ומסודר.",
   },
   {
     ratingIcon: "assets/icons/google.svg",
-    name: "דוד מזרחי",
-    location: "ירושלים",
-    image: "assets/investors/1.png",
+    name: "רחל לוי",
+    location: "חיפה",
+    image: "assets/investors/2.png",
     review:
-      "מדהים שאפשר לעשות הכול מהארץ. לא הייתי צריך לטוס אפילו פעם אחת. הליווי היה צמוד, גם בעברית, הם מקצועיים מאוד, אמליץ עליהם לחברים שרוצים להשקיע בדובאי.",
+      "לא תכננתי לרכוש, רק להבין את השוק – אבל הם הסבירו כל דבר בסבלנות והראו לי בדיוק מה מתאים לי. בסוף רכשתי נכס שכבר מניב תשואה יפה, הרבה מעל המצופה.",
   },
   {
     ratingIcon: "assets/icons/google.svg",
