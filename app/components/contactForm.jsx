@@ -3,6 +3,14 @@ import React, { useRef } from "react";
 import { useActionState } from "react";
 import Image from "next/image";
 
+const CONFIG = {
+  system_url:
+    "https://hubspot-proxy-0d8d4ed31dcb.herokuapp.com/leadPush?pid=epshb",
+  headers: {
+    "Content-Type": "text/plain;charset=utf-8",
+  },
+};
+
 async function send(previousState, formData) {
   console.log("Form submitted with data:", formData);
   const data = Object.fromEntries(formData.entries());
@@ -34,6 +42,18 @@ async function send(previousState, formData) {
       errors,
     };
   } else {
+    //  const leadData = {
+    //   data
+    // };
+    console.log(data, "xxx");
+    return;
+    const response = await fetch(CONFIG.system_url, {
+      method: "POST",
+      headers: AFFDR_CONFIG.headers,
+      body: JSON.stringify(data),
+    });
+
+    const data = await response.json();
     console.log("Form submitted successfully with data:", data);
     return {
       status: "success",

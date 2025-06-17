@@ -50,7 +50,10 @@ export default function Page() {
               השקעת נדל״ן בדובאי עם תשואה של 15%–12% וללא עמלות – זה לא רק חכם,
               זה נכון
             </p>
-            <button>לתיאום פגישת ייעוץ ללא עלות</button>
+            <a href="#contact-form">
+              {" "}
+              <button>לתיאום פגישת ייעוץ ללא עלות</button>
+            </a>
           </div>
         </div>
         <HeroGallery />
@@ -69,7 +72,10 @@ export default function Page() {
               הנדל"ן בדובאי
             </p>
             <div className="button-container desk-only">
-              <button>לתיאום פגישת ייעוץ ללא עלות</button>
+              <a href="#contact-form">
+                {" "}
+                <button>לתיאום פגישת ייעוץ ללא עלות</button>
+              </a>
             </div>
             <About />
           </div>
@@ -79,7 +85,10 @@ export default function Page() {
             <h2>התהליך שלנו - פשוט, שקוף, מאובטח</h2>
             <Process />
             <div className="button-container">
-              <button>לתיאום פגישת ייעוץ ללא עלות</button>
+              <a href="#contact-form">
+                {" "}
+                <button>לתיאום פגישת ייעוץ ללא עלות</button>
+              </a>
             </div>
           </div>
         </section>
@@ -142,12 +151,14 @@ export default function Page() {
                 שוק הנדל״ן בדובאי ממשיך לצמוח - עם תשואות מרשימות ויציבות לאורך
                 זמן
               </p>
-              <button>לתיאום פגישת ייעוץ ללא עלות</button>
+              <a href="#contact-form">
+                <button>לתיאום פגישת ייעוץ ללא עלות</button>
+              </a>
             </div>
           </div>
         </section>
 
-        <section className="contact accent">
+        <section id="contact-form" className="contact accent">
           <div className="container">
             <div className="logo-wrapper">
               <Image

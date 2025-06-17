@@ -131,7 +131,10 @@ const Portfolio = ({ items = portfolioData }) => {
                     <li key={paramIndex}>{parameter}</li>
                   ))}
                 </ul>
-                <button>{item.buttonText}</button>
+                <a href="#contact-form" style={{ display: "inline-block" }}>
+                  {" "}
+                  <button style={{ width: "100%" }}>{item.buttonText}</button>
+                </a>
               </div>
             </div>
           </li>
