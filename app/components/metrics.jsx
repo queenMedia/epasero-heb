@@ -14,10 +14,11 @@ const steps = 100; // Number of steps
 const Metrics = ({ items = metricsData }) => {
   const [animatedValues, setAnimatedValues] = useState(items.map(() => 0));
 
-  const list = useRef(null);
+  const listRef = useRef(null);
 
   useEffect(() => {
-    if (list.current && items.length) {
+    const list = listRef.current;
+    if (list && items.length) {
       const io = new IntersectionObserver(
         (ev) => {
           if (ev.at(0).isIntersecting) {
@@ -49,22 +50,22 @@ const Metrics = ({ items = metricsData }) => {
                 }
               }, interval);
             });
-            io?.unobserve(list.current);
+            io?.unobserve(list);
           }
         },
         { root: null, rootMargin: "0px", threshold: 1.0 }
       );
 
-      io.observe(list.current);
+      list && io.observe(list);
 
       return () => {
-        io?.unobserve(list.current);
+        list && io?.unobserve(list);
       };
     }
   }, [items]);
 
   return (
-    <ul className="flex-row" ref={list}>
+    <ul className="flex-row" ref={listRef}>
       {items.map((item, index) => (
         <li key={index} className="rtl-wrapper">
           <strong>

@@ -436,4 +436,11 @@
   footer {
     padding: 80px 0;
   }
+
+  .whatsappBtn {
+    right: 20px;
+    width: 4rem;
+    height: 4rem;
+    bottom: 20px;
+  }
 }

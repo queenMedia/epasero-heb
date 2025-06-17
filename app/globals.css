@@ -99,16 +99,6 @@ ul {
   padding: 12.5px 0;
 }
 
-.top-line a {
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  display: inline-block;
-  padding: 11px 25px;
-  font-weight: 700;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
 .top-line a:hover {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -724,6 +714,7 @@ section.contact .container > p {
   width: 512px;
   margin: auto;
   margin-top: 35px;
+  text-align: center;
 }
 
 .contact form .form-group {
@@ -905,6 +896,102 @@ footer::after {
 
 .footer__links ul li {
   cursor: pointer;
+}
+
+ul.Errors {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+  list-style-type: disc;
+  margin: auto;
+  display: inline-block;
+  margin: -20px 0 20px 0;
+}
+
+.contact form.error .form-group > input,
+.contact form.error .form-group > select {
+  border: 1px solid red;
+}
+
+button[type="submit"] {
+  position: relative;
+  height: 50px;
+}
+
+.loader {
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader::after,
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: animloader 1s linear infinite;
+}
+.loader::after {
+  animation-delay: 1s;
+}
+
+form.success button[type="submit"] {
+  background: rgba(0, 130, 52, 1);
+  color: white;
+}
+
+.whatsappBtn {
+  position: fixed;
+  right: 40px;
+  width: 5rem;
+  height: 5rem;
+  bottom: 20px;
+  z-index: 124;
+  animation: bounce 1.4s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  to {
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    transform: translateY(-10%);
+  }
+
+  50% {
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transform: none;
+  }
+}
+
+@keyframes animloader {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0%,
+  60%,
+  100% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
 }
 
 @keyframes blured {
