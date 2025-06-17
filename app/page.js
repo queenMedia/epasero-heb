@@ -112,6 +112,7 @@ export default function Page() {
 
         <section className="investors accent">
           <div className="container">
+            <h2>הצטרפו לאלפי משקיעים מרוצים</h2>
             <div className="rating-wrapper">
               <div className="rating">
                 <Image
@@ -130,7 +131,6 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <h2>הצטרפו לאלפי משקיעים מרוצים</h2>
             <Investors />
           </div>
           <div className="investors-view">

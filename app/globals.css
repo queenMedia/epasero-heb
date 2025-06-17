@@ -593,7 +593,7 @@ section .container > p {
 }
 
 section.investors .container > h2 {
-  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 .investors-content ul {
