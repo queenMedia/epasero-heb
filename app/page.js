@@ -24,7 +24,7 @@ export default function Page() {
           autoPlay
           // poster="assets/video-1-preview.png"
         >
-          <source src="assets/hero-video.mov" type="video/mp4" />
+          <source src="assets/hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="top-line">
@@ -84,7 +84,7 @@ export default function Page() {
         </section>
         <section className="process">
           <div className="container">
-            <h2>התהליך שלנו - פשוט, שקוף, מאובטח</h2>
+            <h2>התהליך שלנו פשוט, שקוף, ובטוח</h2>
             <Process />
             <div className="button-container">
               <a href="#contact-form">

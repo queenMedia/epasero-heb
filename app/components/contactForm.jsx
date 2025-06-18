@@ -43,8 +43,8 @@ async function send(previousState, formData) {
     !data.name ||
     !data.email ||
     !data.amount ||
-    data.amount === "default" ||
-    !data.date
+    data.amount === "default"
+    // || !data.date
   ) {
     errors.push("כל השדות נדרשים");
   }
@@ -56,13 +56,14 @@ async function send(previousState, formData) {
   }
 
   // check that date is in the future
-  const selectedDate = new Date(data.date);
+  //const selectedDate = new Date(data.date);
 
-  const today = new Date();
-  today.setHours(0, 0, 0, 0); // Set time to midnight for comparison
-  if (selectedDate < today) {
-    errors.push("התאריך הנבחר חייב להיות בעתיד");
-  }
+  // const today = new Date();
+  // today.setHours(0, 0, 0, 0); // Set time to midnight for comparison
+
+  // if (selectedDate < today) {
+  //   errors.push("התאריך הנבחר חייב להיות בעתיד");
+  // }
 
   if (errors.length > 0) {
     return {
@@ -78,7 +79,7 @@ async function send(previousState, formData) {
         lastname: lastName,
         phone: data.phone,
         email: data.email,
-        start_date: new Date(data.date).toLocaleDateString("he-IL"),
+        //start_date: new Date(data.date).toLocaleDateString("he-IL"),
         investment_budget:
           data.amount === "1"
             ? "hcELbnsoHrdRrCisZL2IG"
@@ -192,7 +193,7 @@ export const ContactForm = () => {
           <option value="4">‏3,500,000 – ‏₪10,000,000</option>
         </select>
       </div>
-      <div className="form-group">
+      {/* <div className="form-group">
         <Image
           width={16}
           height={9}
@@ -219,7 +220,7 @@ export const ContactForm = () => {
             }
           }}
         />
-      </div>
+      </div> */}
       <p>שליחת הפרטים מהווה אישור לתנאי השימוש ולמדיניות הפרטיות.</p>
       <button disabled={isPending || success} type="submit">
         {" "}

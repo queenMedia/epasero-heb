@@ -58,9 +58,9 @@ header {
   color: white;
   padding-bottom: 50px;
   background: linear-gradient(
-    178.82deg,
-    rgba(0, 0, 0, 0) 15.03%,
-    rgba(0, 0, 0, 0.39) 102.84%
+    177.79deg,
+    rgba(0, 0, 0, 0) 15.68%,
+    rgba(0, 0, 0, 0.5) 98.27%
   );
 }
 
@@ -125,7 +125,7 @@ h1 {
 
 .hero-content p {
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 40px;
   width: 750px;
   text-align: center;
