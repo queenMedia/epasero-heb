@@ -100,7 +100,7 @@ export default function ThankYouPage() {
             לייעוץ אישי והצגת הזדמנויות השקעה מותאמות לצרכיכם הספציפיים בשוק
             הנדל"ן בדובאי.
           </p>
-          <a href="/#contact-form">
+          <a href="/">
             {" "}
             <button>חזרה לדף הבית</button>
           </a>
