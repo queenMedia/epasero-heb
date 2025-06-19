@@ -1,7 +1,8 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { useActionState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const CONFIG = {
   system_url:
@@ -118,6 +119,7 @@ async function send(previousState, formData) {
 
 export const ContactForm = () => {
   const [state, action, isPending] = useActionState(send, null);
+  const router = useRouter();
 
   console.log("Current form state:", state);
 
@@ -126,6 +128,12 @@ export const ContactForm = () => {
   const data = state?.data || {};
 
   const success = state?.status === "success";
+
+  useEffect(() => {
+    if (success) {
+      router.push('/thank-you');
+    }
+  }, [success, router]);
 
   return (
     <form

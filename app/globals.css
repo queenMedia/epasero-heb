@@ -960,6 +960,10 @@ form.success button[type="submit"] {
   animation: bounce 1.4s infinite;
 }
 
+.thank-you-page {
+  /* color: white; */
+}
+
 @keyframes bounce {
   0%,
   to {
