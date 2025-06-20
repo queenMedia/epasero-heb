@@ -46,8 +46,10 @@ const Process = ({ steps = processData }) => {
               {" "}
               <Image fill src={step.image} alt={`process-image-${index}`} />
             </div>
-            <strong>{step.title}</strong>
-            <span>{step.description}</span>
+            <div className="process-text">
+              <strong>{step.title}</strong>
+              <span>{step.description}</span>
+            </div>
           </li>
         ))}
       </ul>
