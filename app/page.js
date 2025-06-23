@@ -31,8 +31,8 @@ export default function Page() {
           <div className="container">
             <div className="flex-row top-line-content">
               <Image
-                width={134}
-                height={45}
+                width={160.8}
+                height={54}
                 src="assets/logo.png"
                 alt="logo"
                 className="logo"
@@ -48,14 +48,12 @@ export default function Page() {
           <div className="hero-content">
             <h1>הדרך הבטוחה להשקעות נדל"ן בדובאי</h1>
             {/* <h1 className="desk-mob">הדרך הבטוחה להשקעות נדל"ן בדובאי</h1> */}
-            <p>
-              השקעת נדל״ן בדובאי עם תשואה של 15%–12% וללא עמלות – זה לא רק חכם,
-              זה נכון
-            </p>
+            <p>השקעת נדל״ן בדובאי עם תשואה של 15%–12% וללא עמלות</p>
             <a href="#contact-form">
               {" "}
               <button>לתיאום פגישת ייעוץ ללא עלות</button>
             </a>
+            <p style={{ marginBottom: 0 }}>זה לא רק חכם, זה נכון</p>
           </div>
         </div>
         <HeroGallery />
@@ -66,12 +64,12 @@ export default function Page() {
             <Metrics />
           </div>
         </div>
-        <section className="about accent">
+        <section className="about accent" id="about">
           <div className="container">
             <h2>אודות החברה</h2>
             <p>
-              אנחנו מציעים שירות מקצועי ומותאם אישית לכל לקוח, עם ניסיון רב בשוק
-              הנדל"ן בדובאי
+              אנו מציעים שירות מקצועי ומותאם אישית לכל לקוח, עם ניסיון רב של
+              למעלה מ -8 שנים בשוק הנדל”ן בדובאי
             </p>
             <div className="button-container desk-only">
               <a href="#contact-form">
@@ -101,11 +99,11 @@ export default function Page() {
           </div>
         </section>
 
-        <section className="portfolio accent">
+        <section className="portfolio accent" id="portfolio">
           <div className="container">
-            <h2>דוגמאות לנכסים בתיק שלנו</h2>
+            <h2>דוגמאות לנכסים בלעדיים שלנו</h2>
             <p>
-              יותר מ־20,000 דירות ווילות בלעדיות בדובאי, החל מ־100,000 ש"ח הון
+              יותר מ־20,000 דירות ווילות בלעדיות בדובאי, החל מ־150,000 ש"ח הון
               עצמי
             </p>
             <Portfolio />
@@ -171,7 +169,7 @@ export default function Page() {
               />
             </div>
             <h2>מוכנים להתחיל? בואו נתחיל לדבר</h2>
-            <p>השאירו פרטים ונציג יחזור אליכם תוך פחות מ 24 שעות. </p>
+            <p>השאירו פרטים ומומחה נדל”ן יחזור אליכם תוך פחות מ-24 שעות</p>
             <ContactForm />
           </div>
         </section>
@@ -184,25 +182,50 @@ export default function Page() {
                 <h3>פרטי התקשרות</h3>
                 <ul>
                   <li>טלפון דובאי: 971 54 233 6409</li>
-                  <li>דוא"ל: info@epasero.com</li>
+                  <li>
+                    דוא"ל:{" "}
+                    <a href="mailto:info@epaserorealestate.com">
+                      info@epaserorealestate.com
+                    </a>
+                  </li>
                 </ul>
-                <p>נשמח לעמוד לשירותכם בכל שאלה או הבהרה.</p>
+                <p> נציגנו ישמחו לעמוד לרשותכם בכל שאלה</p>
               </div>
               <div className="footer-contacts__item">
                 <h3>שעות פעילות</h3>
                 <p>ימים א'-ה': 18:00 - 09:00</p>
                 <p>יום ו': 17:00- 09:00</p>
+                <p>יום שבת: סגור</p>
               </div>
               <div className="footer-contacts__item">
                 <h3>הסניפים שלנו</h3>
                 <div className="address">
-                  <p>משרד ישראל</p>
-                  <p>תל אביב, הפרדס רמת גן</p>
+                  <p>
+                    <strong>משרד ישראל</strong>
+                  </p>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://www.google.com/maps/place/Menachem+Begin+St+11,+Bnei+Brak,+Israel/@32.0928806,34.8252292,17z/data=!3m1!4b1!4m5!3m4!1s0x151d4a2895653fc1:0xc4c881c9b4a39dc0!8m2!3d32.0928761!4d34.8278041?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D"
+                    >
+                      מנחם בגין 11, רמת גן
+                    </a>
+                  </p>
                 </div>
                 <div className="address">
-                  <p>משרד דובאי</p>
-                  <p>Bore Office Tower, 26th Floor</p>
-                  <p>Business Bay, Dubai</p>
+                  <p>
+                    <strong>משרד דובאי</strong>
+                  </p>
+
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://www.google.com/maps/search/+U+-+Bora+Office+Tower,+Office+2601,+Business+Bay,+Dubai,+UAE/@25.1794349,55.2698715,15.75z?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D"
+                    >
+                      U - Bora Office Tower, Office 2601, Business Bay, Dubai,
+                      UAE
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -214,14 +237,22 @@ export default function Page() {
                 alt="footer-logo"
               />
               <ul className="footer-navigation flex-row">
-                <li>צור קשר</li>
-                <li>פרויקטים</li>
-                <li>אודות</li>
-                <li>דף הבית</li>
+                <li>
+                  <a href="#contact-form">צור קשר</a>
+                </li>
+                <li>
+                  <a href="#portfolio">פרויקטים</a>
+                </li>
+                <li>
+                  <a href="#about">אודות</a>
+                </li>
+                <li>
+                  <a href="/">דף הבית</a>
+                </li>
               </ul>
               <ul className="footer-flags flex-row">
                 <li>
-                  <span>State of Israel</span>
+                  <span>מדינת ישראל</span>
                   <Image
                     width={24}
                     height={18}
@@ -230,7 +261,7 @@ export default function Page() {
                   />
                 </li>
                 <li>
-                  <span>United Arab Emirates</span>
+                  <span>דובאי</span>
                   <Image
                     width={24}
                     height={18}
@@ -239,11 +270,11 @@ export default function Page() {
                   />
                 </li>
               </ul>
-              <p>השירות הישראלי המוביל להשקעות נדל״ן בדובאי ללא עמלות</p>
+              <p>השירות הישראלי המוביל להשקעות נדל״ן בדובאי </p>
             </div>
           </div>
           <div className="footer__links">
-            <p>{"<"} עקבו אחרינו</p>
+            <p> עקבו אחרינו {"<"}</p>
             <ul className="flex-row">
               <li>
                 <a href="">

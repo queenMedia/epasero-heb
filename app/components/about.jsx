@@ -40,10 +40,9 @@ const aboutData = [
   },
   {
     icon: "assets/icons/about_pic2.svg",
-    value: "0%",
-    label: "עמלות",
-    description:
-      "רוב המתחרים גובים עשרות אלפי שקלים בעמלות → אצלנו השירות לגמרי בחינם למשקיע.",
+    value: "",
+    label: "שירות ללא עלות",
+    description: "כל התמיכה שצריך כדי לרכוש נכס בדובאי – ללא תשלום נוסף.",
   },
   {
     icon: "assets/icons/about_pic3.svg",

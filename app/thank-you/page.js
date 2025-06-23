@@ -79,8 +79,8 @@ export default function ThankYouPage() {
         <div className="container">
           <div className="flex-row top-line-content">
             <Image
-              width={134}
-              height={45}
+              width={160.8}
+              height={54}
               src="assets/logo.png"
               alt="logo"
               className="logo"

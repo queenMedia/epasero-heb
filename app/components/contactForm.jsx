@@ -1,8 +1,12 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useActionState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+
+import PhoneInput from "react-phone-input-2";
+import { isPossiblePhoneNumber, isValidPhoneNumber } from "libphonenumber-js";
+import "react-phone-input-2/lib/style.css";
 
 const CONFIG = {
   system_url:
@@ -33,7 +37,7 @@ export const splitFullName = (fullName) => {
   };
 };
 
-async function send(previousState, formData) {
+async function send(previousState, formData, countryCode) {
   const data = Object.fromEntries(formData.entries());
 
   const errors = [];
@@ -54,6 +58,13 @@ async function send(previousState, formData) {
 
   if (!emailRegex.test(data.email)) {
     errors.push("פורמט אימייל לא חוקי");
+  }
+
+  // check phone number
+  if (!data.phone || !isPossiblePhoneNumber(data.phone, countryCode)) {
+    errors.push("מספר טלפון לא חוקי");
+  } else if (!isValidPhoneNumber(data.phone, countryCode)) {
+    errors.push("מספר טלפון לא תקין");
   }
 
   // check that date is in the future
@@ -118,12 +129,31 @@ async function send(previousState, formData) {
 }
 
 export const ContactForm = () => {
-  const [state, action, isPending] = useActionState(send, null);
+  const [state, action, isPending] = useActionState(
+    (...args) => send(...args, countryCode),
+    null
+  );
+  const [countryCode, setCountryCode] = useState("");
+
+  useEffect(() => {
+    const storedCountryCode = localStorage.getItem("countryCode");
+    if (storedCountryCode) {
+      return void setCountryCode(storedCountryCode);
+    }
+    fetch("https://ipapi.co/json/")
+      .then((response) => response.json())
+      .then((data) => {
+        setCountryCode(data.country_code);
+        localStorage.setItem("countryCode", data.country_code);
+      })
+      .catch((error) => console.error("Error fetching country code:", error));
+  }, []);
+
   const router = useRouter();
 
-  console.log("Current form state:", state);
+  //console.log("Current form state:", state);
 
-  const dateRef = useRef(null);
+  //const dateRef = useRef(null);
 
   const data = state?.data || {};
 
@@ -131,7 +161,7 @@ export const ContactForm = () => {
 
   useEffect(() => {
     if (success) {
-      router.push('/thank-you');
+      router.push("/thank-you");
     }
   }, [success, router]);
 
@@ -150,17 +180,7 @@ export const ContactForm = () => {
           ))}
         </ul>
       ) : null}
-      <div className="form-group">
-        <input
-          type="tel"
-          id="phone"
-          dir="rtl"
-          name="phone"
-          required
-          defaultValue={data.phone || ""}
-          placeholder="טלפון*"
-        />
-      </div>
+
       <div className="form-group">
         <input
           type="name"
@@ -171,6 +191,7 @@ export const ContactForm = () => {
           placeholder="שם מלא*"
         />
       </div>
+
       <div className="form-group">
         <input
           type="email"
@@ -179,6 +200,26 @@ export const ContactForm = () => {
           required
           defaultValue={data.email || ""}
           placeholder="מייל*"
+        />
+      </div>
+
+      <div className="form-group">
+        <PhoneInput
+          country={countryCode?.toLowerCase()}
+          inputProps={{
+            name: "phone",
+            id: "phone",
+            // dir: "rtl",
+            // required: true,
+          }}
+          value={data.phone}
+          inputClass="phone-input"
+          countryCodeEditable={true}
+          placeholder="טלפון*"
+          onChange={(_phone, x) => {
+            console.log(x, "x");
+            setCountryCode(x.countryCode);
+          }}
         />
       </div>
 

@@ -127,9 +127,8 @@ h1 {
   font-size: 32px;
   font-weight: 700;
   line-height: 40px;
-  width: 750px;
   text-align: center;
-  margin: 19px 0 32px 0;
+  margin: 20px 0;
 }
 
 .hero-content button {
@@ -214,6 +213,10 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
+}
+
+.metrics .container {
+  width: 1408px;
 }
 
 .metrics ul {
@@ -695,6 +698,7 @@ section.investors .container > h2 {
 
 .investors-view-composition p {
   margin: 20px 0 32px 0;
+  font-size: 32px;
 }
 
 .logo-wrapper {
@@ -835,7 +839,7 @@ footer::after {
 .footer-navigation li:last-of-type {
   margin-right: 0;
 }
-.footer-navigation li:last-of-type {
+.footer-navigation li:first-of-type {
   margin-left: 0;
 }
 
@@ -861,6 +865,14 @@ footer::after {
   font-size: 16px;
   line-height: 24px;
   margin-top: 20px;
+}
+
+.footer-statement img {
+  margin: 0 auto;
+}
+
+.footer-navigation {
+  flex-direction: row-reverse;
 }
 
 .footer__top {
@@ -968,8 +980,62 @@ form.success button[type="submit"] {
   animation: bounce 1.4s infinite;
 }
 
-.thank-you-page {
-  /* color: white; */
+.react-tel-input .special-label {
+  display: none;
+}
+
+.phone-input {
+  width: 100% !important;
+  height: 45px !important;
+}
+
+.react-tel-input .form-control {
+  /* padding-left: 0px !important;
+  padding-right: 50px !important; */
+  padding-left: 60px !important;
+}
+
+.react-tel-input .flag-dropdown {
+  right: unset !important;
+  left: 0 !important;
+  width: 50px !important;
+}
+
+.react-tel-input .selected-flag:hover {
+  background: #f5f5f5 !important;
+  border-top-left-radius: 0.65rem !important;
+  border-bottom-left-radius: 0.65rem !important;
+}
+
+.react-tel-input .selected-flag {
+  width: 100% !important;
+  padding-left: 0px !important;
+}
+
+.react-tel-input .selected-flag .flag {
+  left: 10px !important;
+}
+
+.react-tel-input .selected-flag .arrow {
+  left: 14px !important;
+}
+
+.react-tel-input .country-list .country {
+  text-align: left;
+}
+
+.react-tel-input .country-list {
+  /* right: 0 !important; */
+  transform: translateX(90%) !important;
+  /* left: 100% !important; */
+}
+
+.footer-contacts__item:nth-of-type(1) {
+  width: calc(242px * 1.2);
+}
+
+.footer-contacts__item:nth-of-type(2) {
+  width: calc(242px * 0.8);
 }
 
 @keyframes bounce {

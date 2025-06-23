@@ -45,6 +45,15 @@
     line-height: 78px;
   }
 
+  .investors-view-composition p {
+    font-size: 28px;
+    padding: 0 20px;
+  }
+
+  .metrics .container {
+    width: 1108px;
+  }
+
   .hero-content p,
   section.contact .container > p {
     font-size: 26px;
@@ -161,6 +170,10 @@
     width: 90%;
   }
 
+  .metrics .container {
+    width: unset;
+  }
+
   .about-content {
     flex-direction: column;
     flex-direction: column-reverse;
@@ -218,6 +231,11 @@
     width: 90%;
     font-size: 22px;
   }
+
+  .footer-contacts {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 600px) {
@@ -231,6 +249,10 @@
 
   .top-line-content {
     flex-direction: row-reverse;
+  }
+
+  .investors-view-composition p {
+    padding: 0;
   }
 
   .top-line a {
@@ -430,8 +452,7 @@
   }
 
   .footer__top,
-  .footer-flags,
-  .footer-contacts {
+  .footer-flags {
     flex-direction: column-reverse;
     align-items: flex-start;
   }
