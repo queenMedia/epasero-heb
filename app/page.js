@@ -48,7 +48,7 @@ export default function Page() {
           <div className="hero-content">
             <h1>הדרך הבטוחה להשקעות נדל"ן בדובאי</h1>
             {/* <h1 className="desk-mob">הדרך הבטוחה להשקעות נדל"ן בדובאי</h1> */}
-            <p>השקעת נדל״ן בדובאי עם תשואה של 15%–12% וללא עמלות</p>
+            <p>השקעות נדל״ן בדובאי עם תשואה של 15%–12% וללא עמלות</p>
             <a href="#contact-form">
               {" "}
               <button>לתיאום פגישת ייעוץ ללא עלות</button>
@@ -181,7 +181,17 @@ export default function Page() {
               <div className="footer-contacts__item">
                 <h3>פרטי התקשרות</h3>
                 <ul>
-                  <li>טלפון דובאי: 971 54 233 6409</li>
+                  <li>
+                    {" "}
+                    <span>טלפון דובאי:</span>{" "}
+                    <a href="tel:+971542336409" style={{ direction: "ltr" }}>
+                      <span
+                        style={{ direction: "ltr", unicodeBidi: "isolate" }}
+                      >
+                        +971 54 233 6409
+                      </span>
+                    </a>
+                  </li>
                   <li>
                     דוא"ל:{" "}
                     <a href="mailto:info@epaserorealestate.com">
@@ -277,7 +287,7 @@ export default function Page() {
             <p> עקבו אחרינו {"<"}</p>
             <ul className="flex-row">
               <li>
-                <a href="">
+                <a href="https://www.facebook.com/epaseroIL">
                   <Image
                     width={49}
                     height={49}
@@ -287,7 +297,7 @@ export default function Page() {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://www.instagram.com/epasero_il">
                   <Image
                     width={49}
                     height={49}
@@ -297,7 +307,7 @@ export default function Page() {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://www.linkedin.com/company/epasero-group/">
                   <Image
                     width={49}
                     height={49}
