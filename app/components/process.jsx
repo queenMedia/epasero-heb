@@ -4,7 +4,7 @@ import Image from "next/image";
 const processData = [
   {
     image: "assets/meeting.jpg",
-    title: "הצגה שקופה של כל הפרטים",
+    title: "הצגה מלאה של כל הפרטים",
     description: "כל העלויות, התנאים, התשואות הצפויות - הכל על השולחן",
   },
   {

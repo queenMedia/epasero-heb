@@ -31,9 +31,9 @@ export default function Page() {
           <div className="container">
             <div className="flex-row top-line-content">
               <Image
-                width={160.8}
-                height={54}
-                src="assets/logo.png"
+                width={250}
+                height={125}
+                src="assets/epasero_white.png"
                 alt="logo"
                 className="logo"
               />
@@ -53,7 +53,6 @@ export default function Page() {
               {" "}
               <button>לתיאום פגישת ייעוץ ללא עלות</button>
             </a>
-            <p style={{ marginBottom: 0 }}>זה לא רק חכם, זה נכון</p>
           </div>
         </div>
         <HeroGallery />
@@ -68,8 +67,8 @@ export default function Page() {
           <div className="container">
             <h2>אודות החברה</h2>
             <p>
-              אנו מציעים שירות מקצועי ומותאם אישית לכל לקוח, עם ניסיון רב של
-              למעלה מ -8 שנים בשוק הנדל”ן בדובאי
+              אפסרו נדל"ן מציעה שירות מקצועי ומותאם אישית לכל לקוח, עם ניסיון של
+              למעלה מ־8 שנים בשוק הנדל"ן בדובאי.
             </p>
             <div className="button-container desk-only">
               <a href="#contact-form">
@@ -95,13 +94,13 @@ export default function Page() {
         <section className="developers">
           <div className="container">
             <h2>היזמים המובילים בדובאי</h2>
-            <Developers />
           </div>
+          <Developers />
         </section>
 
         <section className="portfolio accent" id="portfolio">
           <div className="container">
-            <h2>דוגמאות לנכסים בלעדיים שלנו</h2>
+            <h2>הפרויקטים המובילים לשנת 2025</h2>
             <p>
               יותר מ־20,000 דירות ווילות בלעדיות בדובאי, החל מ־150,000 ש"ח הון
               עצמי
@@ -113,7 +112,7 @@ export default function Page() {
         <section className="investors accent">
           <div className="container">
             <h2>הצטרפו לאלפי משקיעים מרוצים</h2>
-            <div className="rating-wrapper">
+            {/* <div className="rating-wrapper">
               <div className="rating">
                 <Image
                   width={46}
@@ -131,7 +130,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <Investors />
+            <Investors /> */}
           </div>
           <div className="investors-view">
             <video
@@ -146,7 +145,7 @@ export default function Page() {
               Your browser does not support the video tag.
             </video>
             <div className="investors-view-composition">
-              <h2>יותר ויותר ישראלים כבר גילו את הפוטנציאל בדובאי</h2>
+              <h2> יותר ויותר ישראלים מזהים את דובאי כהשקעה החכמה לשנת 2025</h2>
               <p>
                 שוק הנדל״ן בדובאי ממשיך לצמוח - עם תשואות מרשימות ויציבות לאורך
                 זמן
@@ -168,8 +167,11 @@ export default function Page() {
                 alt="logo"
               />
             </div>
-            <h2>מוכנים להתחיל? בואו נתחיל לדבר</h2>
-            <p>השאירו פרטים ומומחה נדל”ן יחזור אליכם תוך פחות מ-24 שעות</p>
+            <h2>השאירו פרטים ונחזור אליכם עם כל מה שחשוב לדעת לפני שמתחילים</h2>
+            <p>
+              מומחה מהצוות הישראלי שלנו ישמח להסביר לכם בדיוק איך זה עובד בליווי
+              אישי, ללא התחייבות וללא עלות.
+            </p>
             <ContactForm />
           </div>
         </section>
@@ -241,9 +243,9 @@ export default function Page() {
             </div>
             <div className="footer-statement">
               <Image
-                width={250}
-                height={96}
-                src="assets/footer-logo.png"
+                width={276}
+                height={138}
+                src="assets/epasero_white.png"
                 alt="footer-logo"
               />
               <ul className="footer-navigation flex-row">

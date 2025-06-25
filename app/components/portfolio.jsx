@@ -29,9 +29,9 @@ const portfolioData = [
     buttonText: "לפרטים נוספים",
   },
   {
-    tagColor: "red",
+    tagColor: "blue",
     tagText: "ביקוש גבוה",
-    tagIcon: "assets/icons/fire.svg",
+    tagIcon: "assets/icons/diamond.svg",
     tagIconWidth: 12,
     tagIconHeight: 15,
     gallery: {
@@ -55,9 +55,10 @@ const portfolioData = [
     buttonText: "לפרטים נוספים",
   },
   {
-    tagColor: "blue",
+    tagColor: "red",
     tagText: "נותרו דירות בודדות",
-    tagIcon: "assets/icons/diamond.svg",
+    tagIcon: "assets/icons/fire.svg",
+
     tagIconWidth: 13,
     tagIconHeight: 11,
     gallery: {

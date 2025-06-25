@@ -48,10 +48,22 @@ const HeroGalleryItem = ({ item }) => {
 
 export const HeroGallery = () => {
   return (
-    <div className="hero-gallery flex-row">
-      {items.map((item, index) => (
-        <HeroGalleryItem key={index} item={item} />
-      ))}
+    <div className="hero-gallery-cotnainer">
+      <div className="hero-gallery flex-row">
+        {items.map((item, index) => (
+          <HeroGalleryItem key={index} item={item} />
+        ))}
+      </div>
+      <div className="subtle-arrow">
+        <span></span>
+        <span></span>
+        {/* <span></span> */}
+      </div>
+      <div className="subtle-arrow right">
+        <span></span>
+        <span></span>
+        {/* <span></span> */}
+      </div>
     </div>
   );
 };

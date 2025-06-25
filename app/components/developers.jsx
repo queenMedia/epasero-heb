@@ -6,30 +6,42 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const developersData = [
-  { image: "assets/developers/sobha.png" },
-  { image: "assets/developers/damac.png" },
-  { image: "assets/developers/ellington.png" },
-  { image: "assets/developers/binghatti.png" },
-  { image: "assets/developers/emaar.png" },
+  { image: "assets/partners/1.png" },
+  { image: "assets/partners/2.png" },
+  { image: "assets/partners/3.png" },
+  { image: "assets/partners/4.png" },
+  { image: "assets/partners/5.png" },
+  { image: "assets/partners/6.png" },
+  { image: "assets/partners/7.png" },
+  { image: "assets/partners/8.png" },
+  { image: "assets/partners/9.png" },
+  { image: "assets/partners/10.png" },
+  { image: "assets/partners/11.png" },
+  { image: "assets/partners/12.png" },
+  { image: "assets/partners/13.png" },
 ];
 
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 1024 },
-    items: 5,
+    items: 7,
   },
   desktop: {
     breakpoint: { max: 1024, min: 768 },
-    items: 3,
+    items: 4,
   },
   tablet: {
     breakpoint: { max: 768, min: 464 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 568, min: 0 },
     items: 2,
   },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
+  // mobile: {
+  //   breakpoint: { max: 464, min: 0 },
+  //   items: 2,
+  // },
 };
 
 const Developers = ({ developers = developersData }) => {
@@ -40,17 +52,17 @@ const Developers = ({ developers = developersData }) => {
         responsive={responsive}
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={100} // Adjust speed in milliseconds
+        autoPlaySpeed={50} // Adjust speed in milliseconds
         keyBoardControl={false}
         arrows={false}
-        customTransition="transform 10000ms linear"
-        transitionDuration={10000}
+        customTransition="transform 5000ms linear"
+        transitionDuration={5000}
       >
         {developers.map((developer, index) => (
           <div key={index} className="carousel-item">
             <Image
-              width={196}
-              height={80}
+              width={150}
+              height={100}
               src={developer.image}
               alt="developer"
             />

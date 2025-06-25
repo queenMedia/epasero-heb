@@ -2,7 +2,7 @@
 import React, { useEffect, useState, useRef } from "react";
 
 const metricsData = [
-  { value: "5000", symbol: "+", label: "משקיעים מרוצים" },
+  { value: "5000", symbol: "+", label: "משקיעים מרוצים", formated: true },
   { value: "13.5", symbol: "%", label: "ממוצע תשואה שנתי" },
   { value: "8", symbol: "", label: "שנות נסיון" },
   { value: "0", symbol: "%", label: "עמלות תיווך" },
@@ -13,7 +13,7 @@ const steps = 100; // Number of steps
 
 const Metrics = ({ items = metricsData }) => {
   const [animatedValues, setAnimatedValues] = useState(items.map(() => 0));
-
+  const [finished, setFinished] = useState(false);
   const listRef = useRef(null);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const Metrics = ({ items = metricsData }) => {
               );
 
               let currentStep = 0;
-              const animationInterval = setInterval(() => {
+              const irval = setInterval(() => {
                 currentStep++;
                 const easingFactor = Math.sin(
                   (currentStep / steps) * (Math.PI / 2)
@@ -46,7 +46,8 @@ const Metrics = ({ items = metricsData }) => {
                 });
 
                 if (currentStep >= steps) {
-                  clearInterval(animationInterval);
+                  clearInterval(irval);
+                  setFinished(true);
                 }
               }, interval);
             });
@@ -69,7 +70,9 @@ const Metrics = ({ items = metricsData }) => {
       {items.map((item, index) => (
         <li key={index} className="rtl-wrapper">
           <strong>
-            {animatedValues[index].toFixed(0)}
+            {item.formated && finished
+              ? animatedValues[index].toLocaleString()
+              : animatedValues[index].toFixed(0)}
             {item.symbol}
           </strong>
           <span>{item.label}</span>
