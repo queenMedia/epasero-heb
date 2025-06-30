@@ -1092,6 +1092,11 @@ form.success button[type="submit"] {
   display: none;
 }
 
+.footer__links p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
 @keyframes animate {
   0% {
     opacity: 0;

@@ -24,7 +24,7 @@ export default function Page() {
           autoPlay
           // poster="assets/video-1-preview.png"
         >
-          <source src="assets/hero-video.mp4" type="video/mp4" />
+          <source src="assets/hero-bg-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="top-line">
@@ -109,10 +109,10 @@ export default function Page() {
           </div>
         </section>
 
-        <section className="investors accent">
+        {/*<section className="investors accent">
           <div className="container">
             <h2>הצטרפו לאלפי משקיעים מרוצים</h2>
-            {/* <div className="rating-wrapper">
+            <div className="rating-wrapper">
               <div className="rating">
                 <Image
                   width={46}
@@ -130,7 +130,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <Investors /> */}
+            <Investors /> 
           </div>
           <div className="investors-view">
             <video
@@ -155,7 +155,7 @@ export default function Page() {
               </a>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section id="contact-form" className="contact accent">
           <div className="container">
@@ -167,7 +167,7 @@ export default function Page() {
                 alt="logo"
               />
             </div>
-            <h2>השאירו פרטים ונחזור אליכם עם כל מה שחשוב לדעת לפני שמתחילים</h2>
+            <h2>השאירו פרטים ונחזור אליכם </h2>
             <p>
               מומחה מהצוות הישראלי שלנו ישמח להסביר לכם בדיוק איך זה עובד בליווי
               אישי, ללא התחייבות וללא עלות.
@@ -185,7 +185,7 @@ export default function Page() {
                 <ul>
                   <li>
                     {" "}
-                    <span>טלפון דובאי:</span>{" "}
+                    <span>טלפון :</span>{" "}
                     <a href="tel:+971542336409" style={{ direction: "ltr" }}>
                       <span
                         style={{ direction: "ltr", unicodeBidi: "isolate" }}
@@ -196,8 +196,8 @@ export default function Page() {
                   </li>
                   <li>
                     דוא"ל:{" "}
-                    <a href="mailto:info@epaserorealestate.com">
-                      info@epaserorealestate.com
+                    <a href="mailto:Sales@epaserorealestate.com">
+                      Sales@epaserorealestate.com
                     </a>
                   </li>
                 </ul>
@@ -213,7 +213,7 @@ export default function Page() {
                 <h3>הסניפים שלנו</h3>
                 <div className="address">
                   <p>
-                    <strong>משרד ישראל</strong>
+                    <strong>משרדי ישראל</strong>
                   </p>
                   <p>
                     <a
@@ -226,7 +226,7 @@ export default function Page() {
                 </div>
                 <div className="address">
                   <p>
-                    <strong>משרד דובאי</strong>
+                    <strong>דובאי משרדי</strong>
                   </p>
 
                   <p>
@@ -286,7 +286,7 @@ export default function Page() {
             </div>
           </div>
           <div className="footer__links">
-            <p> עקבו אחרינו {"<"}</p>
+            <p>עקבו אחרינו</p>
             <ul className="flex-row">
               <li>
                 <a href="https://www.facebook.com/epaseroIL">
