@@ -24,7 +24,7 @@ export default function Page() {
           autoPlay
           // poster="assets/video-1-preview.png"
         >
-          <source src="assets/hero-bg-video.mp4" type="video/mp4" />
+          <source src="assets/hero-bg.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="top-line">
@@ -226,7 +226,7 @@ export default function Page() {
                 </div>
                 <div className="address">
                   <p>
-                    <strong>דובאי משרדי</strong>
+                    <strong>משרדי דובאי</strong>
                   </p>
 
                   <p>
