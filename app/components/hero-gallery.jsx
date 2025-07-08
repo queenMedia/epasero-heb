@@ -5,7 +5,7 @@ const items = [
   {
     text: {
       strong: "AED 1,000,000",
-      name: "Ellington PIC",
+      name: "Ellington",
     },
     image:
       "https://epaserorealestate.com/cdn/prod/One_River_Point_hausandhaus_7_21528380dc_9c036dbe32.webp",
