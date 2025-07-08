@@ -230,7 +230,7 @@ button:hover {
 .hero-gallery-text {
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .hero-gallery-text span {
