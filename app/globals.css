@@ -95,6 +95,17 @@ ul {
   justify-content: space-between;
 }
 
+.top-line.fixed {
+  position: fixed;
+  z-index: 123;
+  width: 100%;
+}
+
+.top-line.fixed .top-line-content {
+  height: 98px;
+  justify-content: flex-end;
+}
+
 .top-line-content {
   padding: 12.5px 0;
 }

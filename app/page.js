@@ -27,6 +27,16 @@ export default function Page() {
           <source src="assets/hero-bg.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        <div className="top-line fixed">
+          <div className="container">
+            <div className="flex-row top-line-content">
+              <a href="#contact-form">
+                <button> לשיחת ייעוץ</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="top-line">
           <div className="container">
             <div className="flex-row top-line-content">
@@ -37,9 +47,6 @@ export default function Page() {
                 alt="logo"
                 className="logo"
               />
-              <a href="#contact-form">
-                <button> לשיחת ייעוץ</button>
-              </a>
             </div>
           </div>
         </div>

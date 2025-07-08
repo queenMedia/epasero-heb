@@ -9,20 +9,14 @@ const portfolioData = [
     tagIconWidth: 11,
     tagIconHeight: 11,
     gallery: {
-      top: [
-        "https://epaserorealestate.com/cdn/prod/DAMAC_RIVERSIDE_VIEWS_hausandhaus_14_e6e69b2463_c9fea6cdaf.webp",
-      ],
-      bottom: [
-        "https://epaserorealestate.com/cdn/prod/DAMAC_RIVERSIDE_VIEWS_hausandhaus13_f4fe349508_e0122132e9.webp",
-      ],
-      left: [
-        "https://epaserorealestate.com/cdn/prod/DAMAC_RIVERSIDE_VIEWS_hausandhaus_2_6e1617b26b_2be8dd77d8.webp",
-      ],
+      top: ["assets/portfolio/new/13.jpg"],
+      bottom: ["assets/portfolio/new/11.jpg"],
+      left: ["assets/portfolio/new/12.jpg"],
     },
     badges: [
       { text: "Apartment" },
       {
-        text: "Damac Riverside Views",
+        text: "Damac Riverside",
         icon: "assets/icons/geo.svg",
         iconWidth: 15,
         iconHeight: 11,
@@ -41,15 +35,9 @@ const portfolioData = [
     tagIconWidth: 12,
     tagIconHeight: 15,
     gallery: {
-      top: [
-        "https://epaserorealestate.com/cdn/prod/Sobha_Solis_hausandhaus_10_9521ebfaac_1_1f3bd42d93.webp",
-      ],
-      bottom: [
-        "https://epaserorealestate.com/cdn/prod/Sobha_Solis_hausandhaus_11_a585ab9626_1_867a7eb5c8.webp",
-      ],
-      left: [
-        "https://epaserorealestate.com/cdn/prod/Sobha_Solis_hausandhaus_8_e3337a1aa0_1_249f844cf4.webp",
-      ],
+      top: ["assets/portfolio/new/23.jpg"],
+      bottom: ["assets/portfolio/new/21.jpg"],
+      left: ["assets/portfolio/new/22.webp"],
     },
     badges: [
       { text: "Apartment" },
@@ -74,16 +62,9 @@ const portfolioData = [
     tagIconWidth: 13,
     tagIconHeight: 11,
     gallery: {
-      top: [
-        "https://epaserorealestate.com/cdn/prod/Seapoint_emaar_beachfront_haushaus_1_9fad9b0fd2_e2d6b1a12a.webp",
-        // "assets/portfolio/oasis/top2.png",
-      ],
-      bottom: [
-        "https://epaserorealestate.com/cdn/prod/Seapoint_emaar_beachfront_haushaus_4_14b68158bd_ff62aff187.webp",
-      ],
-      left: [
-        "https://epaserorealestate.com/cdn/prod/Seapoint_emaar_beachfront_haushaus_1_9fad9b0fd2_e2d6b1a12a.webp",
-      ],
+      top: ["assets/portfolio/new/33.jpg"],
+      bottom: ["assets/portfolio/new/31.jpg"],
+      left: ["assets/portfolio/new/32.jpg"],
     },
     badges: [
       { text: "Apartment" },
