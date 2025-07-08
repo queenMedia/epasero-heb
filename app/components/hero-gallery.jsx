@@ -5,23 +5,26 @@ const items = [
   {
     text: {
       strong: "AED 1,000,000",
-      name: "Sobha Solis",
+      name: "Ellington PIC",
     },
-    image: "assets/jacauzzi.png",
+    image:
+      "https://epaserorealestate.com/cdn/prod/One_River_Point_hausandhaus_7_21528380dc_9c036dbe32.webp",
   },
   {
     text: {
       strong: "AED 1,000,000",
-      name: "Sobha Solis",
+      name: "Emaar Properties ",
     },
-    image: "assets/jacauzzi.png",
+    image:
+      "https://epaserorealestate.com/cdn/prod/altus_dch_hausandhaus_7_389e464b9f_1_1bce080df5.webp",
   },
   {
     text: {
       strong: "AED 1,000,000",
-      name: "Sobha Solis",
+      name: "Sobha",
     },
-    image: "assets/jacauzzi.png",
+    image:
+      "https://epaserorealestate.com/cdn/prod/Sobha_Elwood_Clubhouse_4_139e71fec0_4f3a77992e.webp",
   },
 ];
 

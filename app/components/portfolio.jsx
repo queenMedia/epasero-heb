@@ -9,22 +9,28 @@ const portfolioData = [
     tagIconWidth: 11,
     tagIconHeight: 11,
     gallery: {
-      top: ["assets/portfolio/chelsea/top.png"],
-      bottom: ["assets/portfolio/chelsea/bottom.png"],
-      left: ["assets/portfolio/chelsea/left.png"],
+      top: [
+        "https://epaserorealestate.com/cdn/prod/DAMAC_RIVERSIDE_VIEWS_hausandhaus_14_e6e69b2463_c9fea6cdaf.webp",
+      ],
+      bottom: [
+        "https://epaserorealestate.com/cdn/prod/DAMAC_RIVERSIDE_VIEWS_hausandhaus13_f4fe349508_e0122132e9.webp",
+      ],
+      left: [
+        "https://epaserorealestate.com/cdn/prod/DAMAC_RIVERSIDE_VIEWS_hausandhaus_2_6e1617b26b_2be8dd77d8.webp",
+      ],
     },
     badges: [
       { text: "Apartment" },
       {
-        text: "Business Bay",
+        text: "Damac Riverside Views",
         icon: "assets/icons/geo.svg",
         iconWidth: 15,
         iconHeight: 11,
       },
     ],
     priceLabel: "מחיר החל מ",
-    price: "AED 19,000,000",
-    location: "Damac, Chelsea Residences",
+    price: "AED 880,000",
+    location: "Dubai Investment Park 2",
     parameters: ["חדרי רחצה 3", "חדרים 5", "130m²"],
     buttonText: "לפרטים נוספים",
   },
@@ -35,22 +41,28 @@ const portfolioData = [
     tagIconWidth: 12,
     tagIconHeight: 15,
     gallery: {
-      top: ["assets/portfolio/samana/top.png"],
-      bottom: ["assets/portfolio/samana/bottom.png"],
-      left: ["assets/portfolio/samana/left.png"],
+      top: [
+        "https://epaserorealestate.com/cdn/prod/Sobha_Solis_hausandhaus_10_9521ebfaac_1_1f3bd42d93.webp",
+      ],
+      bottom: [
+        "https://epaserorealestate.com/cdn/prod/Sobha_Solis_hausandhaus_11_a585ab9626_1_867a7eb5c8.webp",
+      ],
+      left: [
+        "https://epaserorealestate.com/cdn/prod/Sobha_Solis_hausandhaus_8_e3337a1aa0_1_249f844cf4.webp",
+      ],
     },
     badges: [
       { text: "Apartment" },
       {
-        text: "Business Bay",
+        text: "Sobha Solis",
         icon: "assets/icons/geo.svg",
         iconWidth: 15,
         iconHeight: 11,
       },
     ],
     priceLabel: "מחיר החל מ",
-    price: "AED 1,482,828",
-    location: "Damac, Samana Parkville",
+    price: "AED 1,000,000",
+    location: "Dubai Motor City",
     parameters: ["חדרי רחצה 3", "חדרים 5", "130m²"],
     buttonText: "לפרטים נוספים",
   },
@@ -63,24 +75,28 @@ const portfolioData = [
     tagIconHeight: 11,
     gallery: {
       top: [
-        "assets/portfolio/oasis/top.png",
+        "https://epaserorealestate.com/cdn/prod/Seapoint_emaar_beachfront_haushaus_1_9fad9b0fd2_e2d6b1a12a.webp",
         // "assets/portfolio/oasis/top2.png",
       ],
-      bottom: ["assets/portfolio/oasis/bottom.png"],
-      left: ["assets/portfolio/oasis/left.png"],
+      bottom: [
+        "https://epaserorealestate.com/cdn/prod/Seapoint_emaar_beachfront_haushaus_4_14b68158bd_ff62aff187.webp",
+      ],
+      left: [
+        "https://epaserorealestate.com/cdn/prod/Seapoint_emaar_beachfront_haushaus_1_9fad9b0fd2_e2d6b1a12a.webp",
+      ],
     },
     badges: [
       { text: "Apartment" },
       {
-        text: "Business Bay",
+        text: "Emaar Beachfront",
         icon: "assets/icons/geo.svg",
         iconWidth: 15,
         iconHeight: 11,
       },
     ],
     priceLabel: "מחיר החל מ",
-    price: "AED 1,300,000",
-    location: "Damac, The Oasis",
+    price: "AED 3,200,000",
+    location: "Seapoint",
     parameters: ["חדרי רחצה 3", "חדרים 5", "130m²"],
     buttonText: "לפרטים נוספים",
   },
@@ -127,11 +143,11 @@ const Portfolio = ({ items = portfolioData }) => {
                   <strong>{item.price}</strong>
                 </div>
                 <div className="portfolio-card-location">{item.location}</div>
-                <ul className="portfolio-card-parameters flex-row">
+                {/* <ul className="portfolio-card-parameters flex-row">
                   {item.parameters.map((parameter, paramIndex) => (
                     <li key={paramIndex}>{parameter}</li>
                   ))}
-                </ul>
+                </ul> */}
                 <a href="#contact-form" style={{ display: "inline-block" }}>
                   {" "}
                   <button style={{ width: "100%" }}>{item.buttonText}</button>

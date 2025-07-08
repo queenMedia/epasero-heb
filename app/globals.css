@@ -183,7 +183,7 @@ button:hover {
 }
 
 .hero-gallery_item {
-  width: 269px;
+  width: 300px;
   height: 92px;
   margin: 0 12px;
   border-radius: 16px;
@@ -230,7 +230,11 @@ button:hover {
 .hero-gallery-text {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: 10px;
+}
+
+.hero-gallery-text span {
+  font-size: 18px;
 }
 
 .metrics .container {
@@ -458,7 +462,7 @@ section .container > p {
   position: absolute;
   left: 0;
   top: 0;
-  width: 50%;
+  width: 100%;
   height: 100%;
   border: 1px solid white;
 }
@@ -478,6 +482,7 @@ section .container > p {
   left: unset;
   width: 50%;
   height: 50%;
+  z-index: 2;
 }
 
 .portfolio-card-item--bottom {
@@ -487,6 +492,7 @@ section .container > p {
   top: unset;
   width: 50%;
   height: 50%;
+  z-index: 2;
 }
 
 .portfolio-card {
