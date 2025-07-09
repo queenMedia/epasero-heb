@@ -14,62 +14,25 @@ import { ContactForm } from "./components/contactForm";
 import { WhatsappBtn } from "./components/elements/whatsappBtn";
 import { ContactFormLinks } from "./components/elements/contactFormLinks";
 import { FaqAccordion } from "./components/elements/faqAccordion";
+import { Header } from "./components/header";
 
 export default function Page() {
   return (
     <div className={styles.page}>
-      <header>
-        <video
-          className="video-background"
-          loop
-          muted
-          playsInline
-          autoPlay
-          // poster="assets/video-1-preview.png"
-        >
-          <source src="assets/bg-vid.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div className="top-line fixed">
-          <div className="container">
-            <div className="flex-row top-line-content">
-              <a href="#contact-form">
-                <button> לשיחת ייעוץ</button>
-              </a>
-            </div>
-          </div>
+      <Header renderBottom={() => <HeroGallery />}>
+        <div className="hero-content">
+          <h1>
+            הדרך הבטוחה להשקעות
+            <br />
+            <span>נדל"ן בדובאי</span>
+          </h1>
+          <p>השקעות נדל״ן בדובאי עם תשואה של 15%–12% וללא עמלות</p>
+          <a href="#contact-form">
+            {" "}
+            <button>לתיאום פגישת ייעוץ ללא עלות</button>
+          </a>
         </div>
-
-        <div className="top-line">
-          <div className="container">
-            <div className="flex-row top-line-content">
-              <Image
-                width={250}
-                height={125}
-                src="assets/epasero_white.png"
-                alt="logo"
-                className="logo"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="hero-composition">
-          <div className="hero-content">
-            <h1>
-              הדרך הבטוחה להשקעות
-              <br />
-              <span>נדל"ן בדובאי</span>
-            </h1>
-            <p>השקעות נדל״ן בדובאי עם תשואה של 15%–12% וללא עמלות</p>
-            <a href="#contact-form">
-              {" "}
-              <button>לתיאום פגישת ייעוץ ללא עלות</button>
-            </a>
-          </div>
-        </div>
-        <HeroGallery />
-      </header>
+      </Header>
       <main>
         <div className="metrics">
           <div className="container">
