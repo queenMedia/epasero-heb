@@ -270,16 +270,10 @@ export const ContactForm = () => {
           }}
         />
       </div> */}
-      <p>שליחת הפרטים מהווה אישור לתנאי השימוש ולמדיניות הפרטיות.</p>
+      {/* <p>שליחת הפרטים מהווה אישור לתנאי השימוש ולמדיניות הפרטיות.</p> */}
       <button disabled={isPending || success} type="submit">
         {" "}
-        {isPending ? (
-          <span className="loader"></span>
-        ) : success ? (
-          "✓"
-        ) : (
-          " לתיאום פגישת ייעוץ ללא עלות"
-        )}
+        {isPending ? <span className="loader"></span> : success ? "✓" : "שליחה"}
       </button>
     </form>
   );

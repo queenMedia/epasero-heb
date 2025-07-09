@@ -168,6 +168,14 @@
   .footer-flags li span {
     font-size: 14px;
   }
+
+  .form-wrapper__text {
+    padding-left: 60px;
+  }
+
+  .form-wrapper__form {
+    padding-right: 60px;
+  }
 }
 
 @media (max-width: 1150px) {
@@ -233,6 +241,75 @@
     align-self: flex-start;
     margin-top: 30px;
   }
+
+  .form-wrapper,
+  .faq-wrapper {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .form-wrapper > div,
+  .faq-wrapper > div {
+    width: 100%;
+  }
+
+  .form-wrapper__text,
+  .faq-wrapper__text {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .form-wrapper__form,
+  .faq-wrapper__qa {
+    padding-right: 0;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+
+  .faq-wrapper__text {
+    margin-bottom: 30px;
+  }
+
+  .whatsapp.vex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .whatsapp.vex > a {
+    width: 50%;
+    text-align: center;
+  }
+
+  .whatsapp.desk,
+  .contact-form-links.desk {
+    display: none;
+  }
+
+  .contact-form-links.mob {
+    display: flex;
+  }
+
+  .whatsapp.mob {
+    display: initial;
+    margin-top: 30px;
+  }
+
+  .whatsapp.mob a {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .contact form button {
+    width: 100%;
+  }
+
+  .faq-wrapper__text h2 {
+    font-size: 43px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -240,6 +317,16 @@
     grid-template-rows: repeat(1, auto);
     grid-template-columns: repeat(1, 1fr);
     gap: 25px;
+  }
+
+  .form-wrapper__text h2 {
+    font-size: 44px;
+  }
+
+  .form-wrapper__text p > strong,
+  .contact h3 {
+    font-size: 26px;
+    line-height: 32px;
   }
 
   .hero-content p {

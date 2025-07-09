@@ -8,9 +8,12 @@ import Process from "./components/process";
 import Portfolio from "./components/portfolio";
 import Developers from "./components/developers";
 import Metrics from "./components/metrics";
-import { RatingStars } from "./components/rating-stars";
-import Investors from "./components/investors";
+// import { RatingStars } from "./components/rating-stars";
+// import Investors from "./components/investors";
 import { ContactForm } from "./components/contactForm";
+import { WhatsappBtn } from "./components/elements/whatsappBtn";
+import { ContactFormLinks } from "./components/elements/contactFormLinks";
+import { FaqAccordion } from "./components/elements/faqAccordion";
 
 export default function Page() {
   return (
@@ -53,8 +56,11 @@ export default function Page() {
 
         <div className="hero-composition">
           <div className="hero-content">
-            <h1>הדרך הבטוחה להשקעות נדל"ן בדובאי</h1>
-            {/* <h1 className="desk-mob">הדרך הבטוחה להשקעות נדל"ן בדובאי</h1> */}
+            <h1>
+              הדרך הבטוחה להשקעות
+              <br />
+              <span>נדל"ן בדובאי</span>
+            </h1>
             <p>השקעות נדל״ן בדובאי עם תשואה של 15%–12% וללא עמלות</p>
             <a href="#contact-form">
               {" "}
@@ -164,22 +170,63 @@ export default function Page() {
           </div>
         </section> */}
 
+        <section id="faq-form" className="faq accent">
+          <div className="container">
+            <div className="faq-wrapper">
+              <div className="faq-wrapper__text">
+                <h2>שאלות נפוצות</h2>
+                <p>
+                  אספנו לכם את השאלות הכי נפוצות, וגם אלו שפחות, כדי שתבינו כמה
+                  שיותר על דובאי לפני הצעד הכלכלי המשמעותי הזה
+                </p>
+                <p>
+                  <strong>לא מצאתם תשובה? דברו איתנו:</strong>
+                </p>
+                <WhatsappBtn className={"vex"} />
+              </div>
+              <div className="faq-wrapper__qa">
+                <FaqAccordion />
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="contact-form" className="contact accent">
           <div className="container">
-            <div className="logo-wrapper">
-              <Image
-                width={58}
-                height={58}
-                src="assets/icons/bird.svg"
-                alt="logo"
-              />
+            <div className="form-wrapper flex-row">
+              <div className="form-wrapper__text">
+                <h2>יצירת קשר</h2>
+                <p>
+                  <strong>
+                    חושבים להשקיע בנדל״ן בדובאי? באפסרו – זה הרבה יותר פשוט,
+                    בטוח ומשתלם.
+                  </strong>
+                </p>
+                <p>
+                  אנחנו לא עוד משרד תיווך – אפסרו היא חברת נדל״ן עם צוות ישראלי
+                  שחי ופועל בדובאי, ומביאה לכם גישה בלעדית להזדמנויות שנמצאות
+                  בתוך השוק – לא מחוצה לו.
+                </p>
+                <p>
+                  עם נוכחות מקומית, ניסיון מוכח, וליווי אישי מ־א׳ ועד ת׳ – תהיו
+                  בטוחים שאתם בידיים הנכונות. אם אתם מחפשים תשואה גבוהה, השקעה
+                  חכמה או דירה בדובאי לעצמכם – זה הזמן להצטרף למאות ישראלים שכבר
+                  עשו את זה דרך אפסרו.
+                </p>
+
+                <p>אפסרו. הנדל״ן של דובאי – בגישה ישראלית.</p>
+
+                <WhatsappBtn className={"desk"} />
+
+                <ContactFormLinks className={"desk"} />
+              </div>
+              <div className="form-wrapper__form">
+                <h3>כתבו לנו</h3>
+                <ContactForm />
+              </div>
+              <WhatsappBtn className={"mob"} />
+              <ContactFormLinks className={"mob"} />
             </div>
-            <h2>השאירו פרטים ונחזור אליכם </h2>
-            <p>
-              מומחה מהצוות הישראלי שלנו ישמח להסביר לכם בדיוק איך זה עובד בליווי
-              אישי, ללא התחייבות וללא עלות.
-            </p>
-            <ContactForm />
           </div>
         </section>
       </main>
