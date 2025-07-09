@@ -4,7 +4,7 @@ import Image from "next/image";
 const items = [
   {
     text: {
-      strong: "AED 1,000,000",
+      strong: "AED 2,400,000",
       name: "Ellington",
     },
     image:
@@ -12,7 +12,7 @@ const items = [
   },
   {
     text: {
-      strong: "AED 1,000,000",
+      strong: "AED 1,300,000",
       name: "Emaar Properties ",
     },
     image:
@@ -20,7 +20,7 @@ const items = [
   },
   {
     text: {
-      strong: "AED 1,000,000",
+      strong: "AED 650,000",
       name: "Sobha",
     },
     image:
