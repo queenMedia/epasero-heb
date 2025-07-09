@@ -28,6 +28,11 @@
     height: 50%;
     padding-top: 15px;
   }
+
+  .developers-content .carousel-item img {
+    width: 180px;
+    height: 64px;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -37,6 +42,11 @@
 
   .container {
     width: 1140px;
+  }
+
+  .developers-content .carousel-item img {
+    width: 160px;
+    height: 57px;
   }
 
   h1,
@@ -170,6 +180,11 @@
     width: 90%;
   }
 
+  .developers-content .carousel-item img {
+    width: 130px;
+    height: 46px;
+  }
+
   .metrics .container {
     width: unset;
   }
@@ -239,6 +254,11 @@
 }
 
 @media (max-width: 600px) {
+  .developers-content .carousel-item img {
+    width: 100px;
+    height: 36px;
+  }
+
   .desk-only {
     display: none;
   }
@@ -504,6 +524,11 @@
 }
 
 @media (max-width: 400px) {
+  .developers-content .carousel-item img {
+    width: 90px;
+    height: 32px;
+  }
+
   .footer-navigation li,
   .investor-card-person__name strong {
     font-size: 17px;

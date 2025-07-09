@@ -35,12 +35,11 @@ const developersData = [
   { image: "assets/partners/new-imgs/Fakhruddin.webp" },
   { image: "assets/partners/new-imgs/Emaar_logo.svg" },
   { image: "assets/partners/new-imgs/ellington.svg" },
-  { image: "assets/partners/new-imgs/8b651d5d4efeb6bb3859e307693edad5.jpg" },
+  { image: "assets/partners/new-imgs/ds.jpg" },
   { image: "assets/partners/new-imgs/deyaar-logo.svg" },
   { image: "assets/partners/new-imgs/dar-logo.png" },
   { image: "assets/partners/new-imgs/Danube-Properties.svg" },
   { image: "assets/partners/new-imgs/damac-logo.svg" },
-  { image: "assets/partners/new-imgs/Дизайн-без-названия.png" },
   { image: "assets/partners/new-imgs/images.png" },
   { image: "assets/partners/new-imgs/Binghatti-Logo.svg" },
   { image: "assets/partners/new-imgs/dev_img_185_beyond-logo.png" },
@@ -57,20 +56,24 @@ const developersData = [
 
 const responsive = {
   superLargeDesktop: {
-    breakpoint: { max: 4000, min: 1024 },
+    breakpoint: { max: 4000, min: 1524 },
     items: 6,
+  },
+  desktop2: {
+    breakpoint: { max: 1524, min: 1024 },
+    items: 4,
   },
   desktop: {
     breakpoint: { max: 1024, min: 768 },
     items: 5,
   },
   tablet: {
-    breakpoint: { max: 768, min: 464 },
-    items: 4,
+    breakpoint: { max: 768, min: 568 },
+    items: 3,
   },
   tablet: {
     breakpoint: { max: 568, min: 0 },
-    items: 2,
+    items: 3,
   },
   // mobile: {
   //   breakpoint: { max: 464, min: 0 },
