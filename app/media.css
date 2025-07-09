@@ -87,8 +87,10 @@
     padding: calc(110px * 0.7) 0;
   }
 
-  h2 {
-    font-size: calc(84px * 0.7);
+  h2,
+  .faq-wrapper__text h2,
+  .form-wrapper__text h2 h2 {
+    font-size: calc(54px * 0.7);
     line-height: calc(94px * 0.7);
   }
 
@@ -119,11 +121,11 @@
   .portfolio-card {
     width: calc(516px * 0.7);
   }
-
+  /* 
   .portfolio-card-title strong {
-    font-size: calc(32px * 0.7);
+    font-size: calc(2.2s * 0.7);
     line-height: calc(40px * 0.7);
-  }
+  } */
 
   .portfolio-content ul {
     margin-top: 20px;
@@ -305,10 +307,6 @@
 
   .contact form button {
     width: 100%;
-  }
-
-  .faq-wrapper__text h2 {
-    font-size: 43px;
   }
 }
 

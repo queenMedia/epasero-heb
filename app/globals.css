@@ -278,9 +278,9 @@ section.accent {
 }
 
 h2 {
-  font-size: 84px;
+  font-size: 54px;
   font-weight: 700;
-  line-height: 94px;
+  line-height: 64px;
   text-align: center;
 }
 
@@ -527,11 +527,15 @@ section .container > p {
 }
 
 .portfolio-card-title strong {
-  font-size: 32px;
+  font-size: 20px;
 }
 
 .portfolio-card-title span {
   opacity: 0.8;
+}
+
+.contact.accent {
+  background-color: #ecf1f3;
 }
 
 .portfolio-card-parameters {
@@ -745,10 +749,6 @@ section.investors .container > h2 {
   margin-bottom: 23px;
 }
 
-section.contact {
-  padding-top: 0;
-}
-
 section.contact .container > h2 {
   margin: auto;
 }
@@ -760,8 +760,6 @@ section.contact .container > p {
 
 .contact form {
   width: 512px;
-  /* margin: auto;
-  margin-top: 35px; */
   text-align: center;
 }
 
@@ -1153,7 +1151,7 @@ form.success button[type="submit"] {
 .form-wrapper__text h2 {
   text-align: right;
   margin-bottom: 20px;
-  font-size: 72px;
+  font-size: 54px;
 }
 .form-wrapper__text p > strong {
   font-size: 36px;
@@ -1238,7 +1236,7 @@ form.success button[type="submit"] {
 }
 
 .faq-wrapper__text h2 {
-  font-size: 50px;
+  font-size: 54px;
   text-align: right;
 }
 
