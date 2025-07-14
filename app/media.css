@@ -316,8 +316,13 @@
 }
 
 @media (max-width: 800px) {
-  nav {
+  .top-line.fixed,
+  .top-line-content nav {
     display: none;
+  }
+
+  .bm-burger-button {
+    display: block;
   }
 
   .top-line.fixed .top-line-content {

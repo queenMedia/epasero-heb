@@ -84,7 +84,7 @@ export default function RootLayout({ children }) {
         ></script>
       </head>
 
-      <body className={`${heebo.variable} ${ptSerif.variable} rtl`}>
+      <body className={`${heebo.variable} ${ptSerif.variable} rtl`} id="root">
         <Providers>{children}</Providers>
       </body>
     </html>
