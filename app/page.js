@@ -2,6 +2,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { HeroGallery } from "./components/hero-gallery";
+import { Suspense } from "react";
 
 import { About } from "./components/about";
 import Process from "./components/process";
@@ -13,8 +14,9 @@ import Metrics from "./components/metrics";
 import { ContactForm } from "./components/contactForm";
 import { WhatsappBtn } from "./components/elements/whatsappBtn";
 import { ContactFormLinks } from "./components/elements/contactFormLinks";
-import { FaqAccordion } from "./components/elements/faqAccordion";
+
 import { Header } from "./components/header";
+import { FaqAccordion } from "./components/faq";
 
 export default function Page() {
   return (
@@ -85,54 +87,6 @@ export default function Page() {
           </div>
         </section>
 
-        {/*<section className="investors accent">
-          <div className="container">
-            <h2>הצטרפו לאלפי משקיעים מרוצים</h2>
-            <div className="rating-wrapper">
-              <div className="rating">
-                <Image
-                  width={46}
-                  height={46}
-                  src="assets/icons/google.svg"
-                  alt="google"
-                />
-                <div className="rating-info">
-                  <strong>Google Rating</strong>
-                  <div className="rating-accent flex-row">
-                    <RatingStars />
-                    <strong>4.8</strong>
-                  </div>
-                  <span>See all our reviews</span>
-                </div>
-              </div>
-            </div>
-            <Investors /> 
-          </div>
-          <div className="investors-view">
-            <video
-              className="video-background"
-              loop
-              muted
-              playsInline
-              autoPlay
-              // poster="assets/video-1-preview.png"
-            >
-              <source src="assets/skyline-video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div className="investors-view-composition">
-              <h2> יותר ויותר ישראלים מזהים את דובאי כהשקעה החכמה לשנת 2025</h2>
-              <p>
-                שוק הנדל״ן בדובאי ממשיך לצמוח - עם תשואות מרשימות ויציבות לאורך
-                זמן
-              </p>
-              <a href="#contact-form">
-                <button>לתיאום פגישת ייעוץ ללא עלות</button>
-              </a>
-            </div>
-          </div>
-        </section> */}
-
         <section id="faq-form" className="faq accent">
           <div className="container">
             <div className="faq-wrapper">
@@ -148,7 +102,9 @@ export default function Page() {
                 <WhatsappBtn className={"vex"} />
               </div>
               <div className="faq-wrapper__qa">
-                <FaqAccordion />
+                <Suspense fallback={<div>Loading...</div>}>
+                  <FaqAccordion />
+                </Suspense>
               </div>
             </div>
           </div>

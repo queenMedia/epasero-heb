@@ -242,35 +242,7 @@ export const ContactForm = () => {
           <option value="4">‏3,500,000 – ‏₪10,000,000</option>
         </select>
       </div>
-      {/* <div className="form-group">
-        <Image
-          width={16}
-          height={9}
-          src="assets/icons/arrowDown.svg"
-          alt="Phone Icon"
-          className="arrow-down-icon"
-        />
-        <input
-          type="text"
-          id="date"
-          name="date"
-          ref={dateRef}
-          // defaultValue={data.date ? new Date(data.date) : undefined}
-          // hidden
-          required
-          placeholder="מתי תרצו שנחזור אליכם?*"
-          onFocus={() => {
-            dateRef.current.type = "date";
-          }}
-          onBlur={() => {
-            if (!dateRef.current.value) {
-              dateRef.current.type = "text";
-              dateRef.current.placeholder = "מתי תרצו שנחזור אליכם?*";
-            }
-          }}
-        />
-      </div> */}
-      {/* <p>שליחת הפרטים מהווה אישור לתנאי השימוש ולמדיניות הפרטיות.</p> */}
+
       <button disabled={isPending || success} type="submit">
         {" "}
         {isPending ? <span className="loader"></span> : success ? "✓" : "שליחה"}
