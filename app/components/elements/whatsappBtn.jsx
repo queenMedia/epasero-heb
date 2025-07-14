@@ -36,7 +36,7 @@ export const WhatsappBtn = ({ className }) => {
       {className === "vex" && (
         <a
           href="#contact-form"
-          className="elementor-button elementor-button-link elementor-size-sm blue"
+          className="elementor-button elementor-button-link elementor-size-sm blue accent-text"
         >
           צרו קשר עכשיו
         </a>

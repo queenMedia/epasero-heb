@@ -28,6 +28,19 @@ export const Header = ({ children, renderBottom = () => {} }) => {
       <div className="top-line">
         <div className="container">
           <div className="flex-row top-line-content">
+            <nav>
+              <ul className="flex-row">
+                <li>
+                  <a href="#about">אודות החברה</a>
+                </li>
+                <li>
+                  <a href="#faq-form">שאלות נפוצות</a>
+                </li>
+                <li>
+                  <a href="#contact-form">יצירת קשר</a>
+                </li>
+              </ul>
+            </nav>
             <Image
               width={250}
               height={125}

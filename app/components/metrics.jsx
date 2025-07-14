@@ -68,7 +68,7 @@ const Metrics = ({ items = metricsData }) => {
   return (
     <ul className="flex-row" ref={listRef}>
       {items.map((item, index) => (
-        <li key={index} className="rtl-wrapper">
+        <li key={index} className="rtl-wrapper accent-text">
           <strong>
             {item.formated && finished
               ? animatedValues[index].toLocaleString()

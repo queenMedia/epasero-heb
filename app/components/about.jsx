@@ -18,14 +18,14 @@ const About = ({ items = aboutData }) => {
           </li>
         ))}
       </ul>
-      <div className="about-image">
+      {/* <div className="about-image">
         <Image
           width={650}
           height={553}
           src="assets/dubai-view.jpg"
           alt="dubai-view"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

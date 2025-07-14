@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "modern-css-reset";
 import "./globals.css";
 import "./media.css";
+import "./components/why-invest/source.css";
 import Providers from "./providers";
 
 const heebo = localFont({
@@ -83,7 +84,7 @@ export default function RootLayout({ children }) {
         ></script>
       </head>
 
-      <body className={`${heebo.variable} ${ptSerif.variable}`}>
+      <body className={`${heebo.variable} ${ptSerif.variable} rtl`}>
         <Providers>{children}</Providers>
       </body>
     </html>
