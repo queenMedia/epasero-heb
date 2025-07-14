@@ -45,7 +45,7 @@ export const Newsletter = () => {
               >
                 <div className="elementor-widget-container">
                   <h4 className="elementor-heading-title elementor-size-default">
-                    קבלו פרויקטים חמיםמהשטח לפני כולם
+                    המדריך הבלעדי להשקעות בדובאי קבל את המדריך חינם
                   </h4>{" "}
                 </div>
               </div>
@@ -57,7 +57,7 @@ export const Newsletter = () => {
               >
                 <div className="elementor-widget-container">
                   <p className="elementor-heading-title elementor-size-default">
-                    הירשמו לעידכונים שבועיים
+                    השאר פרטים וקבל גישה מיידית למידע בלעדי
                   </p>{" "}
                 </div>
               </div>
@@ -138,19 +138,19 @@ export const Newsletter = () => {
                     <div className="elementor-field-type-acceptance elementor-field-group elementor-column elementor-field-group-terms elementor-col-100">
                       <div className="elementor-field-subgroup">
                         <span className="elementor-field-option">
-                          <input
+                          {/* <input
                             type="checkbox"
                             name="form_fields[terms]"
                             id="form-field-terms"
                             className="elementor-field elementor-size-md  elementor-acceptance-field"
                           />
-                          <label htmlFor="form-field-terms">
+                          {/* <label htmlFor="form-field-terms">
                             אני מסכים למסור את פרטיי בהתאם ל
                             <a href="/terms/">
                               <u>מדיניות הפרטיות</u> ו<u>תנאי השימוש</u>
                             </a>
                             .
-                          </label>{" "}
+                          </label>{" "} */}
                         </span>
                       </div>
                     </div>
@@ -161,11 +161,12 @@ export const Newsletter = () => {
                             type="checkbox"
                             name="form_fields[marketing]"
                             id="form-field-marketing"
+                            style={{ marginLeft: 8 }}
                             className="elementor-field elementor-size-md  elementor-acceptance-field"
                           />
                           <label htmlFor="form-field-marketing">
-                            אני מסכים לקבל מידע על הצעות, מבצעים ושירותים מאתר
-                            זה.
+                            אני מסכים לקבל מידע על הזדמנויות השקעה ועדכונים
+                            מקצועיים
                           </label>{" "}
                         </span>
                       </div>
